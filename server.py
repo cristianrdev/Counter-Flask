@@ -3,11 +3,6 @@ from flask import Flask, render_template, request ,redirect, session
 app = Flask(__name__)
 app.secret_key = 'clavesecreta' # asignar una clave secreta por motivos de seguridad
 
-# @app.route('/')
-# def index():
-#     print("*"*20)
-#     print("carga contador.html")
-#     return render_template("contador.html")
 
 
 @app.route('/')
