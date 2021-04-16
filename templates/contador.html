@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Contador</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Contador</h1>
+        <h4> {{ session['contador'] }} veces</h4>
+        <div class="botones">
+            <button class="boton botones1" onclick="location.href='/destroy_session' "> Reset </button>
+            <button class="boton botones1" onclick="location.href='/' "> Refrescar </button>
+        </div>
+        <button  class="boton botones2" onclick="location.href='/counter_plus_two' "> Contador +2 </button>
+
+        <form  class="" action="/increment_xtimes" method="post">
+            <h4>Incrementar en </h4><input class="ingreso" type="" name="increment" maxlength="3"> <input class="boton botones3" type='submit' value='Incrementar!'>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
