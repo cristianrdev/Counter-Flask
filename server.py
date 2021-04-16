@@ -34,12 +34,6 @@ def increment_xtimes():
     session['contador']+= int(request.form["increment"]) - 1
     return redirect('/')
 
-# @app.route('/counter') 
-# def show():
-#     session['visitas'] =  int(session['visitas']) + 1
-#     print("*"*20)
-#     print(f"ha aumentado el número {session['visitas']}")
-#     return render_template('contador.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
